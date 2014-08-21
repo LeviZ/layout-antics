@@ -1,0 +1,211 @@
+/*
+
+.main__wrapper {
+  border: dotted purple 1px;
+}
+
+.main__header {
+  border: dotted red 1px;
+}
+
+.main__nav {
+  border: dotted blue 1px;
+}
+
+.main__nav li {
+  border: solid black 1px;
+}
+
+.main__logo {
+  border: solid green 1px;
+}
+
+
+
+/**********************
+ PAGE
+**********************/
+
+body {
+  font-family: serif;
+  color: #222;
+  background-color: #edeff0;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 1em;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+/**********************
+ HEADER
+**********************/
+
+
+.main__header {
+  background-color: hsla(215, 10%, 40%, 1);
+}
+
+.main__nav a {
+  background-color: hsla(100, 30%, 50%, 1);
+}
+
+.main__logo,
+.main__nav a {
+  display: block;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.main__nav a {
+  border: solid 1px hsla(100, 30%, 40%, 1);
+  margin: 0 7px;
+  font-size: 1.2em;
+  text-align: center;
+  align-self: center;
+  color: white;
+  width: 120px;
+  height: 43px;
+}
+
+.main__nav a:hover {
+  background-color: hsla(100, 30%, 58%, 1);
+  border: 1px solid hsla(100, 30%, 58%, 1);
+}
+
+.main__nav {
+  display: flex;
+  align-self: center;
+}
+
+.main__header {
+  padding: 20px;
+  width: 100%;
+}
+
+.main__logo {
+  max-width: 100%;
+}
+
+.main__nav > a:first-child {
+  margin: -25px 20px 0 0;
+  border: none;
+  background-color: hsla(215, 10%, 40%, 1);
+  width: 150px;
+  height: 100px;
+}
+
+
+
+
+/**********************
+ MAIN
+**********************/
+
+
+main {
+  margin-top: 1.5em;
+  background: #f7f7f7;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.main__col__1, .main__col__2 {
+  max-width: 50%;
+  padding: 1em;
+  margin-bottom: 0 auto;
+}
+
+.main__col__group {
+  display: flex;
+}
+
+
+
+
+
+/**********************
+MAIN 2
+**********************/
+
+
+.main2 {
+  max-width: 70em;
+  margin: 0 auto;
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+.main2__col {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.main2__col h1 {
+  font-size: 3.4em;
+  margin-bottom: 0.5em;
+}
+
+.main2__col p {
+  text-align: center;
+}
+
+
+/**********************
+ MEDIA QUERIES
+**********************/
+
+@media screen and (max-width: 768px) {
+
+  .main__logo {
+    max-width: 120px;
+  }
+
+  .main__col__1, .main__col__2 {
+    max-width: 100%;
+  }
+
+  .main__nav {
+    flex-wrap: wrap;
+  }
+
+  .main__nav a {
+    width: 120px;
+    margin: 10px 10px;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .main__nav a {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .main__nav > a:first-child {
+    display: none;
+  }
+
+  .main__col__group, .main__nav {
+    display: block;
+  }
+
+}
+
